@@ -1,0 +1,39 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap");
+
+:root {
+  --card-w: 100%;
+}
+@media (min-width: 768px) {
+  :root {
+    --card-w: 50%;
+  }
+}
+#track > article {
+  min-width: var(--card-w);
+  box-sizing: border-box;
+}
+
+@theme {
+  --color-primary-400: #007662;
+
+  --color-light-400: #e7d7c5;
+
+  --color-dark-300: #402e32;
+  --color-dark-400: #34291b;
+  --color-dark-700: #19130b;
+
+  --color-darktxt-400: #514536;
+  --color-darktxt-500: #18020c;
+
+  --font-sans: "Lexend", sans-serif;
+  --font-serif: "Libre Baskerville", serif;
+}
+
+@layer components {
+  .text-default-light {
+    color: #514536;
+    line-height: 30px;
+    font-family: "Libre Baskerville", serif;
+  }
+}
